@@ -28,9 +28,19 @@ public class AnimationFromAssetsActivity extends Activity {
         animationView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                animationView.stepToFrame(currentIndex++, false);
+                animationView.startAnimation();
             }
         });
+        animationView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                animationView.stopAnimation();
+                return true;
+            }
+        });
+        animationView.setLoops(1);
+        animationView.setClearsAfterStop(false);
+        animationView.setClearsAfterDetached(false);
         loadAnimation();
         setContentView(animationView);
     }

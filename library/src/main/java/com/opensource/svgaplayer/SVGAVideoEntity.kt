@@ -17,7 +17,7 @@ import org.json.JSONObject
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream
-import java.util.*
+import java.util.HashMap
 
 /**
  * Created by PonyCui on 16/6/18.
@@ -158,7 +158,8 @@ class SVGAVideoEntity {
     }
 
     private fun createBitmap(byteArray: ByteArray, filePath: String): Bitmap? {
-        val bitmap = SVGABitmapByteArrayDecoder.decodeBitmapFrom(byteArray, mFrameWidth, mFrameHeight)
+        val bitmap =
+                SVGABitmapByteArrayDecoder.decodeBitmapFrom(byteArray, mFrameWidth, mFrameHeight)
         return bitmap ?: createBitmap(filePath)
     }
 
@@ -192,7 +193,9 @@ class SVGAVideoEntity {
         }
     }
 
-    private fun createSvgaAudioEntity(audio: AudioEntity, audiosFileMap: HashMap<String, File>): SVGAAudioEntity {
+    private fun createSvgaAudioEntity(
+            audio: AudioEntity, audiosFileMap: HashMap<String, File>
+    ): SVGAAudioEntity {
         val item = SVGAAudioEntity(audio)
         val startTime = (audio.startTime ?: 0).toDouble()
         val totalTime = (audio.totalTime ?: 0).toDouble()
@@ -223,10 +226,10 @@ class SVGAVideoEntity {
             audiosDataMap.forEach {
                 val audioCache = SVGACache.buildAudioFile(it.key)
                 audiosFileMap[it.key] =
-                    audioCache.takeIf { file -> file.exists() } ?: generateAudioFile(
-                        audioCache,
-                        it.value
-                    )
+                        audioCache.takeIf { file -> file.exists() } ?: generateAudioFile(
+                                audioCache,
+                                it.value
+                        )
             }
         }
         return audiosFileMap

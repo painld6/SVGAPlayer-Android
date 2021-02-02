@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga1"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga2"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga3"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga4"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="300dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga5"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="0dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga6"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga7"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga8"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="300dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga9"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="0dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga10"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga11"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/svga12"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="300dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+</FrameLayout>
